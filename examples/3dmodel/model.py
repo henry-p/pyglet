@@ -27,7 +27,7 @@ if __name__ == "__main__":
     glEnable(GL_LIGHTING)
     glEnable(GL_LIGHT0)
 
-    model = pyglet.model.load("logo3d.obj", batch=batch)
+    model = pyglet.resource.model("logo3d.obj", batch=batch)
     glTranslatef(0, 0, -3)
     pyglet.clock.schedule_interval(rotate, 1/60)
     pyglet.app.run()
